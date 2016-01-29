@@ -13,6 +13,8 @@ You can enable ActsAsParanoid like this:
 ```ruby
 class Paranoiac < ActiveRecord::Base
   acts_as_paranoid
+  #OR without the default scope
+  acts_as_paranoid without_default_scope: true
 end
 ```
 
